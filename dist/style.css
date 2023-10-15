@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(77, 77, 77, 0.7);
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    display: flex;
+ }
+
+ body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: url(image/pexels-olena-bohovyk-3794382.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+ .logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+ }
+
+ .navigation .underline {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: 500;
+ }
+
+ .navigation .underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+ }
+
+ .navigation .underline:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+ }
+
+ .navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-left: 40px;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    transition: .5s;
+ }
+
+ .navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+ }
